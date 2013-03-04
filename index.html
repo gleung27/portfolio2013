@@ -9,12 +9,12 @@
 	  		var headerHeight = $('.header').height();
 	  		var headerScalableHeight = 0.5 *headerHeight;
 	  		var heightPercentage = 0;
-	  		console.log(totalHeight);
 	  		$(window).scroll(function(){
 	  			heightPercentage =$(document).scrollTop() / totalHeight;
 	  			var newHeight =0.5*headerHeight + 0.5*headerHeight*(1 - heightPercentage);
 	  			$('.header').height(newHeight);
-	  			$('.header .image').css('height',newHeight + 'px');
+	  			//$('.header .image').css('height',newHeight + 'px');
+	  			$('#contentBlock #portfolio_section').css('opacity',  heightPercentage);
 
 	  		});
 	  	});
@@ -55,7 +55,12 @@
 		</div>
 		<div class='header'> <div class='image'></div></div>
 		
-		<div id='contentBlock' > paralax</div>
+		<div id='contentBlock' > 
+
+			<div id='portfolio_section'>
+				Portfolio Stuff
+			</div>
+		</div>
 	</body>
 
 </html>

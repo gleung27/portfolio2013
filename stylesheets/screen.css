@@ -132,3 +132,11 @@ body div {
   top: 60%;
   float: left;
 }
+/* line 82, ../sass/screen.scss */
+#contentBlock #portfolio_section {
+  background-color: white;
+  margin: 3%;
+  width: 94%;
+  height: 74%;
+  opacity: 0.0;
+}

@@ -76,6 +76,14 @@ body
 	height:80%; 
 	position:relative; 
 	top:60%; 
-	
 	float:left;
+
+	#portfolio_section
+	{
+		background-color:white;
+		margin: 3%;
+		width: 94%;
+		height: 74%;
+		opacity:0.0;
+	}
 }
