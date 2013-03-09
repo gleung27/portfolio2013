@@ -139,19 +139,20 @@ h2 {
   background: url("../images/black_mamba_gradient.png") repeat top left;
   font-size: 2em;
   height: 10%;
+  min-height: 40px;
   position: fixed;
   top: 0px;
   color: white;
   float: left;
   text-align: center;
 }
-/* line 115, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .header .header_container {
   width: 80%;
   margin: 0 auto;
   padding: 0px;
 }
-/* line 119, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .header .header_container .image {
   width: 300px;
   min-height: 50px;
@@ -161,7 +162,7 @@ h2 {
   background-size: 300px;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 #twitterBlock {
   width: 98%;
   position: fixed;
@@ -171,12 +172,12 @@ h2 {
   padding: 0 1%;
   color: #52a0b7;
 }
-/* line 141, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 #twitterBlock span {
   color: #6648a9;
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 #skillsBlock {
   width: 98%;
   position: fixed;
@@ -184,38 +185,38 @@ h2 {
   height: 100%;
   background-color: #fff;
 }
-/* line 158, ../sass/screen.scss */
+/* line 159, ../sass/screen.scss */
 #skillsBlock #skillsContainer {
   position: relative;
   width: 80%;
   margin: 0 auto;
   padding: 0 1%;
 }
-/* line 165, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 #skillsBlock #skillsContainer .section-left {
   width: 50%;
 }
-/* line 170, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 #skillsBlock #skillsContainer .section-right {
   width: 25%;
 }
-/* line 174, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 #skillsBlock #skillsContainer h1 {
   font-size: 4em;
 }
-/* line 175, ../sass/screen.scss */
+/* line 176, ../sass/screen.scss */
 #skillsBlock #skillsContainer ul {
   margin: 10px 0;
 }
-/* line 178, ../sass/screen.scss */
+/* line 179, ../sass/screen.scss */
 #skillsBlock #skillsContainer ul li {
   line-height: 1.4em;
 }
-/* line 182, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 #skillsBlock #skillsContainer p {
   line-height: 2.5em;
 }
-/* line 183, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 #skillsBlock #skillsContainer span {
   font-family: "tTextFont", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
@@ -223,7 +224,7 @@ h2 {
   color: #6648a9;
 }
 
-/* line 192, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 #contentHolder {
   position: absolute;
   padding: 0;
@@ -233,7 +234,7 @@ h2 {
   background-color: green;
 }
 
-/* line 201, ../sass/screen.scss */
+/* line 202, ../sass/screen.scss */
 #contentBlock {
   height: 100%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 7px 2px;
@@ -260,7 +261,7 @@ h2 {
   		}
   	}*/
 }
-/* line 207, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 #contentBlock h1 {
   -webkit-text-stroke: 2px #52a0b7;
   color: white;
@@ -269,23 +270,23 @@ h2 {
   margin: 0 auto;
   margin-top: -50px;
 }
-/* line 229, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 #contentBlock #portfolio_section {
   margin: 0 auto;
   padding: 1% 0;
   width: 80%;
   height: 90%;
 }
-/* line 236, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 #contentBlock #portfolio_section h3 {
   margin: 10px;
   font-weight: 300;
 }
-/* line 240, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 #contentBlock #portfolio_section h4 {
   margin: 10px 0;
 }
-/* line 244, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 #contentBlock #portfolio_section .item_image {
   float: left;
   width: 200px;
@@ -296,7 +297,7 @@ h2 {
   margin-left: 0;
   background-color: white;
 }
-/* line 255, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 #contentBlock #portfolio_section .arrow-right-7 {
   padding: 0;
   float: left;
@@ -307,55 +308,55 @@ h2 {
   border-bottom: 7px solid transparent;
   border-left: 7px solid #6648a9;
 }
-/* line 261, ../sass/screen.scss */
+/* line 262, ../sass/screen.scss */
 #contentBlock #portfolio_section a {
   margin: 5px 0;
   text-decoration: none;
   color: white;
 }
-/* line 266, ../sass/screen.scss */
+/* line 267, ../sass/screen.scss */
 #contentBlock #portfolio_section a:hover {
   color: #6648a9;
 }
 
 /*Media Queries max 1000px */
 @media only screen and (max-width: 1000px) {
-  /* line 282, ../sass/screen.scss */
+  /* line 283, ../sass/screen.scss */
   #skillsBlock #skillsContainer .clear {
     clear: none;
   }
-  /* line 285, ../sass/screen.scss */
+  /* line 286, ../sass/screen.scss */
   #skillsBlock #skillsContainer .section-left {
     width: 0%;
   }
-  /* line 290, ../sass/screen.scss */
+  /* line 291, ../sass/screen.scss */
   #skillsBlock #skillsContainer .section-right {
     width: 50%;
   }
-  /* line 293, ../sass/screen.scss */
+  /* line 294, ../sass/screen.scss */
   #skillsBlock #skillsContainer h1 {
     font-size: 2em;
   }
-  /* line 296, ../sass/screen.scss */
+  /* line 297, ../sass/screen.scss */
   #skillsBlock #skillsContainer p {
     line-height: 1.5em;
   }
-  /* line 300, ../sass/screen.scss */
+  /* line 301, ../sass/screen.scss */
   #skillsBlock #skillsContainer span {
     font-size: 1em;
   }
 
-  /* line 305, ../sass/screen.scss */
+  /* line 306, ../sass/screen.scss */
   h2 {
     font-size: 1em;
   }
 
-  /* line 310, ../sass/screen.scss */
+  /* line 311, ../sass/screen.scss */
   ul {
     font-size: 0.8em;
   }
 
-  /* line 315, ../sass/screen.scss */
+  /* line 316, ../sass/screen.scss */
   #contentBlock #portfolio_section .item_image {
     width: 150px;
     height: 150px;
@@ -364,14 +365,22 @@ h2 {
 }
 /*Media Queries max 600px */
 @media only screen and (max-width: 600px) {
-  /* line 330, ../sass/screen.scss */
+  /* line 331, ../sass/screen.scss */
   .item_info {
     float: left;
     min-height: 80px;
     max-height: 90px;
   }
-  /* line 331, ../sass/screen.scss */
+  /* line 332, ../sass/screen.scss */
   .item_info h3 {
     display: none;
+  }
+}
+/*Media Queries max 600px */
+@media only screen and (max-width: 400px) {
+  /* line 342, ../sass/screen.scss */
+  h1, #contentBlock h1 {
+    font-size: 1em;
+    -webkit-text-stroke: 0px;
   }
 }

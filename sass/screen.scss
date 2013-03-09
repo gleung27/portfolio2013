@@ -107,6 +107,7 @@ h2 {
 	background:url('../images/black_mamba_gradient.png') repeat top left;
 	font-size: 2em;
 	height:10%;
+	min-height: 40px;
 	position:fixed; 
 	top:0px; 
 	color:white;
@@ -332,5 +333,14 @@ h2 {
 		float: left;
 		min-height: 80px;
 		max-height:90px;
+	}
+}
+
+/*Media Queries max 600px */
+
+@media only screen and (max-width: 400px) {
+	 h1, #contentBlock h1 {
+		font-size: 1em;
+		-webkit-text-stroke: 0px;
 	}
 }
