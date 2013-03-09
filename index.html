@@ -6,19 +6,27 @@
 	  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	  <script>
 	  	$(document).ready(function(){
-
-	  		$(window).resize(function() {
-  				console.log($(window).width());
-			});
-
+			var latestTweet='';	  		
+	  		jQuery(function($) { // Shorter for $(document).ready(function() {, and you make sure that $ refers to jQuery.
+   			 $.ajax({ // All jQuery ajax calls go throw here. $.getJSON is just a rewrite function for $.ajax
+       			 url: "https://api.twitter.com/1/users/show.json?screen_name=gleung27&include_entities=true",
+       	 		dataType: "jsonp", // dataType set to jsonp (important)
+        		success: function( response ) {
+            		
+            		$('#twitterBlock').html('<span>@'+response.screen_name+': </span>'
+            		 +response.status.text);
+            		 // Here resp represents the data reseved from the ajax call.
+        }
+    	});
+		});
 	  		var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/);
 	  		if (isMobile)
 	  		{
 	  			//initial set up //mobile
-	  			console.log('dddd');
 	  			$('.header').height('5%');
 		  		$('#contentBlock h1').css('margin-top', '0');
 	  		}
+	  		$('.header .image').height($('.header').height());
 	  		var width = $(window).width() * 0.8;
 	  		$('#portfolio_summary .item_image').each(function(){
 	  			$(this).css({'width': (width/5) - 30 +'px', 'height': +(width/5) - 30 +'px'});
@@ -34,9 +42,9 @@
 		  			heightPercentage =$(document).scrollTop() / totalHeight;
 		  			var newHeight =0.5*headerHeight + 0.5*headerHeight*(1 - heightPercentage);
 		  			//adjust header height
-		  			$('.header').height(newHeight);
+		  			$('.header, .header .image').height(newHeight);
 		  			//margin the header up
-		  			$('#contentBlock h1').css('margin-top', -50*(1-heightPercentage));
+		  			$('#contentBlock h1').css('margin-top', -60*(1-heightPercentage));
 	  			}
 
 	  			//$('#contentBlock #portfolio_summary').css('opacity',  1- heightPercentage);
@@ -48,7 +56,7 @@
 
 	</head>
 	<body >
-			<div id='twitterBlock'><span>@gleung27:</span> Sample Twitter Feed</div>
+			<div id='twitterBlock'></div>
 		<div id='skillsBlock'>
 
 			<div id='skillsContainer'>			
@@ -66,7 +74,7 @@
 								<li>Cocoa API</li>
 								<li>MVC Design Pattern</li>
 								<li>Core Data</li>
-								<li>Integrating RESTful web services</li>
+								<li>RESTful web services</li>
 								<li>Push Notification</li>
 							</ul>
 
@@ -77,10 +85,10 @@
 
 								<li>HTML/HTML5</li>
 								<li>CSS/CSS3</li>
-								<li>Javascript</li>
-								<li>jQuery/jQuery Mobile</li>
+								<li>Javascript/jQuery</li>
 								<li>PHP 5</li>
 								<li>Sass</li>
+								<li>Responsive Design</li>
 							</ul>
 		
 				</div>
@@ -112,8 +120,8 @@
 							<div class='clear'></div>
 						</div>
 
-						<div class='item_image'></div>			
-						<div class='item_info'>
+						<div class='item_image row2'></div>			
+						<div class='item_info '>
 							<h3> iOS Project</h3>
 							<h4> Pizza Pizza App</h4>			
 							<div class='arrow-right-7'></div>
@@ -132,8 +140,8 @@
 							<div class='clear'></div>
 						</div>
 
-						<div class='item_image'></div>			
-						<div class='item_info'>
+						<div class='item_image row2'></div>			
+						<div class='item_info '>
 							<h3>Playbook Project</h3>
 							<h4>Canada's Got Talent (WebWorks)</h4>			
 							<div class='arrow-right-7'></div>

@@ -98,6 +98,10 @@ h2 {
 	padding-bottom: 20px;
 }
 
+.row2 {
+	position: relative;
+	bottom:55%;
+}
 
 .header
 {
@@ -132,9 +136,12 @@ h2 {
 	{
 		@include width100;
 		position:fixed;
-		top:10%;
+		top:11%;
 		margin:0% 10% 0 10%;
 		width:80%;
+		height:1em;
+		overflow:hidden;
+		text-overflow: ellipsis;
 		padding:0 1%;
 		color:$primaryBlue;
 
@@ -193,10 +200,9 @@ h2 {
 #contentHolder {
 	position:absolute; 
 	padding: 0;
-	height:83%; 
-	top:66%; 
+	height:80%; 
+	top:65%; 
 	width:100%;
-	background-color: green;
 }
 #contentBlock
 {
@@ -208,10 +214,10 @@ h2 {
 	h1 {
 		-webkit-text-stroke: 2px $primaryBlue;
 		color:white;
-		padding:0px;
+		padding:0.5% 0px;
 		width: 80%;
 		margin:0 auto;
-		margin-top:-50px;
+		margin-top:-60px;
 	}	
 /*	#portfolio_summary {
 		opacity:0.0;
@@ -232,7 +238,7 @@ h2 {
 		margin: 0 auto;
 		padding:1% 0;
 		width: 80%;
-		height:90%;
+		height:84%;
 		//opacity:0.0;
 		h3 {
 			margin:10px;
@@ -253,6 +259,10 @@ h2 {
 			background-color:white;
 		}
 
+		.item_info
+		{
+			height:49%;
+		}
 		.arrow-right-7 {
 			padding: 0;
 			float:left;
@@ -318,10 +328,7 @@ h2 {
 			height:150px;
 			background-size:25px 25px;
 		}
-	.item_info 
-	{
-		//display: none;
-	}
+
 }
 
 /*Media Queries max 600px */
