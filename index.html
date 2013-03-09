@@ -6,12 +6,10 @@
 	  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	  <script>
 	  	$(document).ready(function(){
-	  		alert(navigator.userAgent);
 	  		var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/);
 	  		if (isMobile)
 	  		{
 	  			//initial set up
-
 		  			$('#contentBlock h1').css('margin-top', '0');
 	  		}
 	  		var width = $(window).width() * 0.8;
@@ -24,7 +22,7 @@
 	  		var heightPercentage = 0;
 	  		$(window).scroll(function(){
 	  			
-	  			if(isMobile)
+	  			if(!isMobile)
 	  			{
 		  			heightPercentage =$(document).scrollTop() / totalHeight;
 		  			var newHeight =0.5*headerHeight + 0.5*headerHeight*(1 - heightPercentage);
