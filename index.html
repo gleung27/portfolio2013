@@ -1,10 +1,12 @@
 <html>
 	<head>
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=2.0, width=device-width" />
 	  <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
 
 	  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	  <script>
 	  	$(document).ready(function(){
+	  		alert(navigator.userAgent);
 	  		var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/);
 	  		if (isMobile)
 	  		{
