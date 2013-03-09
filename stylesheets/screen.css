@@ -67,16 +67,69 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 23, ../sass/screen.scss */
-body {
-  font-family: "Helvetica", "Arial", sans-serif;
+/*Font face*/
+@font-face {
+  font-family: 'tTextFont';
+  src: url("../font/TitilliumText25L004.otf");
+  src: url("../font/TitilliumText25L004-webfont.eot?#iefix") format("embedded-opentype"), url("../font/TitilliumText25L004-webfont.woff") format("woff"), url("../font/TitilliumText25L004-webfont.ttf") format("truetype"), url("../font/TitilliumText25L004-webfont.svg") format("svg");
+  font-weight: 200;
+  font-style: normal;
 }
-/* line 26, ../sass/screen.scss */
+
+@font-face {
+  font-family: 'tTextFont';
+  src: url("../font/TitilliumText25L003.otf");
+  src: url("../font/TitilliumText25L003-webfont.eot?#iefix") format("embedded-opentype"), url("../font/TitilliumText25L003-webfont.woff") format("woff"), url("../font/TitilliumText25L003-webfont.ttf") format("truetype"), url("../font/TitilliumText25L003-webfont.svg") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'tTextFont';
+  src: url("../font/TitilliumText25L001.otf");
+  src: url("../font/TitilliumText25L001-webfont.eot?#iefix") format("embedded-opentype"), url("../font/TitilliumText25L001-webfont.woff") format("woff"), url("../font/TitilliumText25L001-webfont.ttf") format("truetype"), url("../font/TitilliumText25L001-webfont.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* line 43, ../sass/screen.scss */
+h1 {
+  font-size: 2.8em;
+  font-weight: 500;
+  color: #505050;
+}
+
+/* line 48, ../sass/screen.scss */
+h2 {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #505050;
+}
+
+/* line 54, ../sass/screen.scss */
+.clear {
+  clear: both;
+  padding: 0px;
+}
+
+/* line 60, ../sass/screen.scss */
+.cols {
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 79, ../sass/screen.scss */
+body {
+  font-family: "tTextFont", "Helvetica", "Arial", sans-serif;
+  font-weight: 200;
+}
+/* line 83, ../sass/screen.scss */
 body div {
   padding: 1%;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .header {
   width: 98%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 7px 2px;
@@ -90,18 +143,24 @@ body div {
   color: white;
   float: left;
   text-align: center;
-  padding: 1%;
 }
-/* line 44, ../sass/screen.scss */
-.header .image {
+/* line 100, ../sass/screen.scss */
+.header .header_container {
+  width: 80%;
   margin: 0 auto;
-  width: 546px;
+  padding: 0px;
+}
+/* line 104, ../sass/screen.scss */
+.header .header_container .image {
+  width: 300px;
   min-height: 50px;
+  margin: 0 auto;
   padding: 0px;
   background: url("../images/logo.png") no-repeat center center;
+  background-size: 300px;
 }
 
-/* line 55, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 #skillsBlock {
   width: 98%;
   position: fixed;
@@ -110,33 +169,112 @@ body div {
   height: 100%;
   background-color: #fff;
 }
-/* line 64, ../sass/screen.scss */
-#skillsBlock table {
-  width: 100%;
-  height: 300px;
+/* line 127, ../sass/screen.scss */
+#skillsBlock #twitterBlock {
+  position: absolute;
+  top: 80px;
+  margin: 0 10%;
+  width: 80%;
+  padding: 1% 0px;
+  color: #52a0b7;
+}
+/* line 137, ../sass/screen.scss */
+#skillsBlock #twitterBlock span {
+  color: #505050;
+}
+/* line 142, ../sass/screen.scss */
+#skillsBlock #skillsContainer {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 1%;
+}
+/* line 148, ../sass/screen.scss */
+#skillsBlock #skillsContainer h1 {
+  font-size: 4em;
+}
+/* line 149, ../sass/screen.scss */
+#skillsBlock #skillsContainer ul {
+  margin: 10px 0;
+}
+/* line 152, ../sass/screen.scss */
+#skillsBlock #skillsContainer ul li {
+  line-height: 1.4em;
+}
+/* line 156, ../sass/screen.scss */
+#skillsBlock #skillsContainer p {
+  line-height: 2.5em;
+}
+/* line 157, ../sass/screen.scss */
+#skillsBlock #skillsContainer span {
+  font-family: "tTextFont", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 1.8em;
+  color: #505050;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 168, ../sass/screen.scss */
 #contentBlock {
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 7px 2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 7px 2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 7px 2px;
   width: 98%;
-  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #54b0e1), color-stop(100%, #049ee6));
-  background-image: -webkit-radial-gradient(center center, #54b0e1 0%, #049ee6 100%);
-  background-image: -moz-radial-gradient(center center, #54b0e1 0%, #049ee6 100%);
-  background-image: -o-radial-gradient(center center, #54b0e1 0%, #049ee6 100%);
-  background-image: radial-gradient(center center, #54b0e1 0%, #049ee6 100%);
+  background-image: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 100, color-stop(0%, #54b0e1), color-stop(100%, #52a0b7));
+  background-image: -webkit-radial-gradient(center center, #54b0e1 0%, #52a0b7 100%);
+  background-image: -moz-radial-gradient(center center, #54b0e1 0%, #52a0b7 100%);
+  background-image: -o-radial-gradient(center center, #54b0e1 0%, #52a0b7 100%);
+  background-image: radial-gradient(center center, #54b0e1 0%, #52a0b7 100%);
+  background-color: #52a0b7;
   height: 80%;
   position: relative;
-  top: 60%;
+  top: 70%;
   float: left;
 }
-/* line 82, ../sass/screen.scss */
-#contentBlock #portfolio_section {
-  background-color: white;
-  margin: 3%;
-  width: 94%;
-  height: 74%;
+/* line 177, ../sass/screen.scss */
+#contentBlock h1 {
+  -webkit-text-stroke: 2px #52a0b7;
+  color: white;
+  padding: 0px;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: -50px;
+}
+/* line 185, ../sass/screen.scss */
+#contentBlock #portfolio_summary {
   opacity: 0.0;
+  position: absolute;
+  background-color: grey;
+  top: 0px;
+  margin: 0 10%;
+  width: 80%;
+}
+/* line 192, ../sass/screen.scss */
+#contentBlock #portfolio_summary div.item_image {
+  background-color: white;
+  margin: 5px;
+  float: left;
+}
+/* line 199, ../sass/screen.scss */
+#contentBlock #portfolio_section {
+  margin: 0 auto;
+  padding: 1% 0;
+  width: 80%;
+  height: 75%;
+}
+/* line 206, ../sass/screen.scss */
+#contentBlock #portfolio_section h3 {
+  margin: 10px;
+  font-weight: 300;
+}
+/* line 212, ../sass/screen.scss */
+#contentBlock #portfolio_section .item_image {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  background-size: 50px 50px;
+  background-color: white;
+}
+/* line 220, ../sass/screen.scss */
+#contentBlock #portfolio_section p {
+  float: left;
 }

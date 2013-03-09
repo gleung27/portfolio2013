@@ -5,6 +5,10 @@
 	  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	  <script>
 	  	$(document).ready(function(){
+	  		var width = $(window).width() * 0.8;
+	  		$('#portfolio_summary .item_image').each(function(){
+	  			$(this).css({'width': (width/5) - 30 +'px', 'height': +(width/5) - 30 +'px'});
+	  		});
 	  		var totalHeight = $(document).height() - $(window).height();
 	  		var headerHeight = $('.header').height();
 	  		var headerScalableHeight = 0.5 *headerHeight;
@@ -14,7 +18,8 @@
 	  			var newHeight =0.5*headerHeight + 0.5*headerHeight*(1 - heightPercentage);
 	  			$('.header').height(newHeight);
 	  			//$('.header .image').css('height',newHeight + 'px');
-	  			$('#contentBlock #portfolio_section').css('opacity',  heightPercentage);
+	  			$('#contentBlock h1').css('margin-top', -50*(1-heightPercentage));
+	  			//$('#contentBlock #portfolio_summary').css('opacity',  1- heightPercentage);
 
 	  		});
 	  	});
@@ -23,42 +28,84 @@
 	</head>
 	<body >
 		<div id='skillsBlock'>
-			<table border="3" bordercolor="#c86260" >
-				<tr>
-					<td style="text-align:center; font-size: 20px; color:blue;"> iOS </td>
-					<td style="font-size:200px; text-align:center; width:10%">{</td>
-					<td>
-						<ul style= "list-style-type:square">
-							<li>item 1111111</li>
-							<li>item 2</li>
-							<li>item 3</li>
-							<li>item 1</li>
-							<li>item 2</li>
-							<li>item 3</li>
-						</ul>
-					</td>
+			<div id='twitterBlock'><span>@gleung27:</span> Sample Twitter Feed</div>
+			<div id='skillsContainer'>			
+				<div class='cols' style='width:40%;'>
+					<p><span>Welcome</span> to the online portfolio of</p>
+					<h1> Gifford Leung</h1> 
+					<p>I create<span> mobile</span> apps, working with...</p>
+				</div>
+				<div class='clear'></div>
+				<div class='cols' style='width:30%;height:10%;'></div>
+				<div class='cols' style='width:35%; text-align:right;'>
+						<h2> iOS Development</h2>
+							<ul style= "list-style-type:none">
+								<li>Objective-C</li>
+								<li>Cocoa API</li>
+								<li>MVC Design Pattern</li>
+								<li>Core Data</li>
+								<li>Integrating RESTful web services</li>
+								<li>Push Notification</li>
+							</ul>
 
-					<td style="text-align:center; font-size: 20px; color:blue;"> Web</td>
-					<td style="font-size:200px; text-align:center; width:10%">{</td>
-					<td>
-						<ul style= "list-style-type:square">
-							<li>item 1</li>
-							<li>item 2</li>
-							<li>item 3</li>
-							<li>item 1</li>
-							<li>item 2</li>
-							<li>item 3</li>
-						</ul>
-					</td>
-				</tr>
-			</table>
+				</div>
+				<div class='cols' style='width:35%;text-align:right;'>
+						<h2> Web Development</h2>
+							<ul style= "list-style-type:none">
+
+								<li>HTML/HTML5</li>
+								<li>CSS/CSS3</li>
+								<li>Javascript</li>
+								<li>jQuery/jQuery Mobile</li>
+								<li>PHP 5</li>
+								<li>Sass</li>
+							</ul>
+		
+				</div>
+			</div>
 		</div>
-		<div class='header'> <div class='image'></div></div>
+		<div class='header'>
+			<div class='header_container'>
+				<div class='image'></div>
+			</div>
+		</div>
 		
 		<div id='contentBlock' > 
+				<h1>Recent Projects</h1>
+<!-- 				<div id='portfolio_summary'>
+					<div class='item_image'></div>
+					<div class='item_image'></div>
+					<div class='item_image'></div>
+					<div class='item_image'></div>
+					<div class='item_image'></div>
+				</div>
+ -->			<div id='portfolio_section'>
+				<div class='cols' style='width:50%;'>
+					<div class='item_image'></div>
+					<h3>iOS Project</h3>
+					<h4> Teambuy App</h4>
+					<a href="#">Go To App</a>			
+					<div class='clear'></div>
+					<div class='item_image'></div>			
+					<h3> iOS Project</h3>
+					<h4> Pizza Pizza App<h4>			
+					<a href="#">Go To App</a>			
+					<div class='clear'></div>
 
-			<div id='portfolio_section'>
-				Portfolio Stuff
+				</div>	
+				<div class='cols' style='width:50%;'>
+					<div class='item_image'></div>
+					<h3> Web Project</h3>
+					<h4> Royal LePage Mobile Web App<h4>			
+					<a href="#">Go To App</a>			
+					<div class='clear'></div>
+					<div class='item_image'></div>			
+					<h3>Playbook Project</h3>
+					<h4>Canada's Got Talent (WebWorks)</h4>			
+					<a href="#">Go To App</a>			
+					<div class='clear'></div>
+						
+				</div>	
 			</div>
 		</div>
 	</body>

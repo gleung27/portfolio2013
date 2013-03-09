@@ -6,6 +6,62 @@
 @import "compass/reset";
 @import "compass/css3";
 
+/*Font face*/
+@font-face {
+    font-family: 'tTextFont';
+    src: url('../font/TitilliumText25L004.otf');
+    src: url('../font/TitilliumText25L004-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/TitilliumText25L004-webfont.woff') format('woff'),
+         url('../font/TitilliumText25L004-webfont.ttf') format('truetype'),
+         url('../font/TitilliumText25L004-webfont.svg') format('svg');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tTextFont';
+    src: url('../font/TitilliumText25L003.otf');
+    src: url('../font/TitilliumText25L003-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/TitilliumText25L003-webfont.woff') format('woff'),
+         url('../font/TitilliumText25L003-webfont.ttf') format('truetype'),
+         url('../font/TitilliumText25L003-webfont.svg') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'tTextFont';
+    src: url('../font/TitilliumText25L001.otf');
+    src: url('../font/TitilliumText25L001-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/TitilliumText25L001-webfont.woff') format('woff'),
+         url('../font/TitilliumText25L001-webfont.ttf') format('truetype'),
+         url('../font/TitilliumText25L001-webfont.svg') format('svg');
+    font-weight:500;
+    font-style: normal;
+}
+
+h1 {
+	font-size: 2.8em;
+	font-weight: 500;
+	color:#505050;
+}
+h2 {
+	font-size: 1.5em;
+	font-weight: 500;
+	color:#505050;
+}
+
+.clear {
+	clear:both;
+	padding: 0px;
+}
+
+
+.cols {
+	float:left;
+	margin:0;
+	padding:0;
+}
 
 @mixin width100 
 {
@@ -21,7 +77,8 @@
 
 body
 {
-	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-family: 'tTextFont','Helvetica', 'Arial', sans-serif;
+	font-weight: 200;
 	div 
 	{
 		padding: 1%;
@@ -40,14 +97,19 @@ body
 	color:white;
 	float:left;
 	text-align:center;
-	padding:1%;
-	.image {
+	.header_container {
+		width:80%;
 		margin:0 auto;
-		width:546px;
-		min-height:50px;
 		padding:0px;
-		background:url('../images/logo.png') no-repeat center center ;
+		.image {
+			width:300px;
+			min-height:50px;
+			margin:0 auto;
+			padding:0px;
+			background:url('../images/logo.png') no-repeat center center ;
+			background-size:300px;
 
+		}
 	}
 }
 
@@ -61,9 +123,43 @@ body
 	height:100%;
 	background-color:#fff;
 
-	table {
-		width:100%;
-		height:300px;
+	#twitterBlock
+	{
+
+		position:absolute;
+		top:80px;
+		margin:0 10%;
+		width:80%;
+		padding:1% 0px;
+		color:#52a0b7;
+
+		span
+		{
+			color:#505050;
+		}
+	}
+	#skillsContainer 
+	{
+		width:80%;
+		margin:0 auto;
+		padding:0 1%;
+
+
+		h1{ font-size: 4em;}
+		ul {
+			margin:10px 0;
+			li
+			{
+				line-height: 1.4em;
+			}
+		}
+		p {line-height: 2.5em; }
+		span {
+			font-family: 'tTextFont','Helvetica', 'Arial', sans-serif;
+			font-weight: 300;
+			font-size: 1.8em;
+			color:#505050;
+		}
 
 	}
 }
@@ -72,18 +168,58 @@ body
 {
 	@include borderShadows;
 	@include width100;
-	@include background-image(radial-gradient(center center, #54b0e1 0%, #049ee6 100%)); 
+	@include background-image(radial-gradient(center center, #54b0e1 0%, #52a0b7 100%)); 
+	background-color:#52a0b7;
 	height:80%; 
 	position:relative; 
-	top:60%; 
+	top:70%; 
 	float:left;
-
+	h1 {
+		-webkit-text-stroke: 2px #52a0b7;
+		color:white;
+		padding:0px;
+		width: 80%;
+		margin:0 auto;
+		margin-top:-50px;
+	}	
+	#portfolio_summary {
+		opacity:0.0;
+		position:absolute;
+		background-color:grey;
+		top:0px;
+		margin: 0 10%;
+		width: 80%;
+		div.item_image{
+			background-color:white;
+			margin:5px;
+			float:left;
+		}
+	}
 	#portfolio_section
 	{
-		background-color:white;
-		margin: 3%;
-		width: 94%;
-		height: 74%;
-		opacity:0.0;
+		//background-color:white;
+		margin: 0 auto;
+		padding:1% 0;
+		width: 80%;
+		height:75%;
+		//opacity:0.0;
+		h3 {
+			margin:10px;
+			font-weight: 300;
+		}
+
+		.item_image
+		{
+			float:left;
+			width: 200px;
+			height:200px;
+			margin: 10px;
+			background-size:50px 50px;
+			background-color:white;
+		}
+		p {
+			float:left;
+		}
+	
 	}
 }
