@@ -168,17 +168,21 @@ h2 {
 
 	}
 }
-
+#contentHolder {
+	position:absolute; 
+	padding: 0;
+	height:80%; 
+	top:80%; 
+	width:100%;
+	background-color: green;
+}
 #contentBlock
 {
+	height:100%;
 	@include borderShadows;
 	@include width100;
 	@include background-image(radial-gradient(center center, #54b0e1 0%, $primaryBlue 100%)); 
 	background-color:$primaryBlue;
-	height:80%; 
-	position:relative; 
-	top:70%; 
-	float:left;
 	h1 {
 		-webkit-text-stroke: 2px $primaryBlue;
 		color:white;
@@ -187,7 +191,7 @@ h2 {
 		margin:0 auto;
 		margin-top:-50px;
 	}	
-	#portfolio_summary {
+/*	#portfolio_summary {
 		opacity:0.0;
 		position:absolute;
 		background-color:grey;
@@ -199,7 +203,7 @@ h2 {
 			margin:5px;
 			float:left;
 		}
-	}
+	}*/
 	#portfolio_section
 	{
 		//background-color:white;
@@ -222,6 +226,8 @@ h2 {
 			height:200px;
 			margin: 10px;
 			background-size:50px 50px;
+			padding-left:0;
+			margin-left: 0;
 			background-color:white;
 		}
 		a{

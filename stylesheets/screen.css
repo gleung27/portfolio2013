@@ -212,8 +212,19 @@ h2 {
   color: #6648a9;
 }
 
-/* line 173, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
+#contentHolder {
+  position: absolute;
+  padding: 0;
+  height: 80%;
+  top: 80%;
+  width: 100%;
+  background-color: green;
+}
+
+/* line 180, ../sass/screen.scss */
 #contentBlock {
+  height: 100%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 7px 2px;
   -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 0 7px 2px;
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 7px 2px;
@@ -224,12 +235,21 @@ h2 {
   background-image: -o-radial-gradient(center center, #54b0e1 0%, #52a0b7 100%);
   background-image: radial-gradient(center center, #54b0e1 0%, #52a0b7 100%);
   background-color: #52a0b7;
-  height: 80%;
-  position: relative;
-  top: 70%;
-  float: left;
+  /*	#portfolio_summary {
+  		opacity:0.0;
+  		position:absolute;
+  		background-color:grey;
+  		top:0px;
+  		margin: 0 10%;
+  		width: 80%;
+  		div.item_image{
+  			background-color:white;
+  			margin:5px;
+  			float:left;
+  		}
+  	}*/
 }
-/* line 182, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 #contentBlock h1 {
   -webkit-text-stroke: 2px #52a0b7;
   color: white;
@@ -238,47 +258,34 @@ h2 {
   margin: 0 auto;
   margin-top: -50px;
 }
-/* line 190, ../sass/screen.scss */
-#contentBlock #portfolio_summary {
-  opacity: 0.0;
-  position: absolute;
-  background-color: grey;
-  top: 0px;
-  margin: 0 10%;
-  width: 80%;
-}
-/* line 197, ../sass/screen.scss */
-#contentBlock #portfolio_summary div.item_image {
-  background-color: white;
-  margin: 5px;
-  float: left;
-}
-/* line 204, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 #contentBlock #portfolio_section {
   margin: 0 auto;
   padding: 1% 0;
   width: 80%;
   height: 75%;
 }
-/* line 211, ../sass/screen.scss */
+/* line 215, ../sass/screen.scss */
 #contentBlock #portfolio_section h3 {
   margin: 10px;
   font-weight: 300;
 }
-/* line 215, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 #contentBlock #portfolio_section h4 {
   margin: 5px 0;
 }
-/* line 219, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 #contentBlock #portfolio_section .item_image {
   float: left;
   width: 200px;
   height: 200px;
   margin: 10px;
   background-size: 50px 50px;
+  padding-left: 0;
+  margin-left: 0;
   background-color: white;
 }
-/* line 227, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 #contentBlock #portfolio_section a {
   margin: 5px 0;
   color: #6648a9;
