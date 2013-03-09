@@ -39,29 +39,9 @@
     font-weight:500;
     font-style: normal;
 }
-
-h1 {
-	font-size: 2.8em;
-	font-weight: 500;
-	color:#505050;
-}
-h2 {
-	font-size: 1.5em;
-	font-weight: 500;
-	color:#505050;
-}
-
-.clear {
-	clear:both;
-	padding: 0px;
-}
-
-
-.cols {
-	float:left;
-	margin:0;
-	padding:0;
-}
+$primaryBlue: #52a0b7;
+$secondaryBlack: #505050;
+$tertaryPurple: #6648a9;
 
 @mixin width100 
 {
@@ -84,6 +64,31 @@ body
 		padding: 1%;
 	}
 }
+
+h1 {
+	font-size: 2.8em;
+	font-weight: 500;
+	color:$secondaryBlack;
+}
+h2 {
+	font-size: 1.5em;
+	font-weight: 500;
+	color:$secondaryBlack;
+}
+
+.clear {
+	clear:both;
+	padding: 0px;
+}
+
+
+.cols {
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+
 .header
 {
 	@include width100;
@@ -131,11 +136,11 @@ body
 		margin:0 10%;
 		width:80%;
 		padding:1% 0px;
-		color:#52a0b7;
+		color:$primaryBlue;
 
 		span
 		{
-			color:#505050;
+			color:$tertaryPurple;
 		}
 	}
 	#skillsContainer 
@@ -158,7 +163,7 @@ body
 			font-family: 'tTextFont','Helvetica', 'Arial', sans-serif;
 			font-weight: 300;
 			font-size: 1.8em;
-			color:#505050;
+			color:$tertaryPurple;
 		}
 
 	}
@@ -168,14 +173,14 @@ body
 {
 	@include borderShadows;
 	@include width100;
-	@include background-image(radial-gradient(center center, #54b0e1 0%, #52a0b7 100%)); 
-	background-color:#52a0b7;
+	@include background-image(radial-gradient(center center, #54b0e1 0%, $primaryBlue 100%)); 
+	background-color:$primaryBlue;
 	height:80%; 
 	position:relative; 
 	top:70%; 
 	float:left;
 	h1 {
-		-webkit-text-stroke: 2px #52a0b7;
+		-webkit-text-stroke: 2px $primaryBlue;
 		color:white;
 		padding:0px;
 		width: 80%;
@@ -207,7 +212,9 @@ body
 			margin:10px;
 			font-weight: 300;
 		}
-
+		h4 {
+			margin: 5px 0;
+		}
 		.item_image
 		{
 			float:left;
@@ -217,8 +224,9 @@ body
 			background-size:50px 50px;
 			background-color:white;
 		}
-		p {
-			float:left;
+		a{
+			margin: 5px 0;
+			color: $tertaryPurple;
 		}
 	
 	}
