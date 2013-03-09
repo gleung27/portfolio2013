@@ -5,7 +5,13 @@
 	  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	  <script>
 	  	$(document).ready(function(){
+	  		var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/);
+	  		if (isMobile)
+	  		{
+	  			//initial set up
 
+		  			$('#contentBlock h1').css('margin-top', '0');
+	  		}
 	  		var width = $(window).width() * 0.8;
 	  		$('#portfolio_summary .item_image').each(function(){
 	  			$(this).css({'width': (width/5) - 30 +'px', 'height': +(width/5) - 30 +'px'});
@@ -15,12 +21,19 @@
 	  		var headerScalableHeight = 0.5 *headerHeight;
 	  		var heightPercentage = 0;
 	  		$(window).scroll(function(){
-	  			heightPercentage =$(document).scrollTop() / totalHeight;
-	  			var newHeight =0.5*headerHeight + 0.5*headerHeight*(1 - heightPercentage);
-	  			$('.header').height(newHeight);
-	  			//$('.header .image').css('height',newHeight + 'px');
-	  			$('#contentBlock h1').css('margin-top', -50*(1-heightPercentage));
+	  			
+	  			if(isMobile)
+	  			{
+		  			heightPercentage =$(document).scrollTop() / totalHeight;
+		  			var newHeight =0.5*headerHeight + 0.5*headerHeight*(1 - heightPercentage);
+		  			//adjust header height
+		  			$('.header').height(newHeight);
+		  			//margin the header up
+		  			$('#contentBlock h1').css('margin-top', -50*(1-heightPercentage));
+	  			}
+
 	  			//$('#contentBlock #portfolio_summary').css('opacity',  1- heightPercentage);
+	  			//$('.header .image').css('height',newHeight + 'px');
 
 	  		});
 	  	});
@@ -85,11 +98,14 @@
 						<div class='item_image'></div>
 						<h3>iOS Project</h3>
 						<h4> Teambuy App</h4>
+						<div class='arrow-right-7'></div>
 						<a href="#">Go To App</a>			
 						<div class='clear'></div>
+
 						<div class='item_image'></div>			
 						<h3> iOS Project</h3>
 						<h4> Pizza Pizza App<h4>			
+						<div class='arrow-right-7'></div>
 						<a href="#">Go To App</a>			
 						<div class='clear'></div>
 
@@ -98,11 +114,14 @@
 						<div class='item_image'></div>
 						<h3> Web Project</h3>
 						<h4> Royal LePage Mobile Web App<h4>			
+						<div class='arrow-right-7'></div>
 						<a href="#">Go To App</a>			
 						<div class='clear'></div>
+
 						<div class='item_image'></div>			
 						<h3>Playbook Project</h3>
 						<h4>Canada's Got Talent (WebWorks)</h4>			
+						<div class='arrow-right-7'></div>
 						<a href="#">Go To App</a>			
 						<div class='clear'></div>
 							

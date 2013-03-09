@@ -54,6 +54,15 @@ $tertaryPurple: #6648a9;
 	@include box-shadow(rgba(black, 0.2) 0 0 7px 2px);
 }
 
+@mixin arrow-right($height) {
+	width: 0; 
+	height: 0; 
+	border-top: $height solid transparent;
+	border-bottom: $height solid transparent;
+	
+	border-left: $height solid $tertaryPurple;
+}
+
 body
 {
 	font-family: 'tTextFont','Helvetica', 'Arial', sans-serif;
@@ -217,7 +226,7 @@ h2 {
 			font-weight: 300;
 		}
 		h4 {
-			margin: 5px 0;
+			margin: 10px 0;
 		}
 		.item_image
 		{
@@ -230,9 +239,21 @@ h2 {
 			margin-left: 0;
 			background-color:white;
 		}
+
+		.arrow-right-7 {
+			padding: 0;
+			float:left;
+			margin: 0px 5px 0 0;
+			@include arrow-right(7px);
+		}
 		a{
 			margin: 5px 0;
-			color: $tertaryPurple;
+			text-decoration: none;
+			color: white;
+
+			&:hover {
+				color:$tertaryPurple;
+			}
 		}
 	
 	}

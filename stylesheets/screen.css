@@ -92,44 +92,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   font-style: normal;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 body {
   font-family: "tTextFont", "Helvetica", "Arial", sans-serif;
   font-weight: 200;
 }
-/* line 62, ../sass/screen.scss */
+/* line 71, ../sass/screen.scss */
 body div {
   padding: 1%;
 }
 
-/* line 68, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 h1 {
   font-size: 2.8em;
   font-weight: 500;
   color: #505050;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 h2 {
   font-size: 1.5em;
   font-weight: 500;
   color: #505050;
 }
 
-/* line 79, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .clear {
   clear: both;
   padding: 0px;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 94, ../sass/screen.scss */
 .cols {
   float: left;
   margin: 0;
   padding: 0;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .header {
   width: 98%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 7px 2px;
@@ -144,13 +144,13 @@ h2 {
   float: left;
   text-align: center;
 }
-/* line 105, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .header .header_container {
   width: 80%;
   margin: 0 auto;
   padding: 0px;
 }
-/* line 109, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 .header .header_container .image {
   width: 300px;
   min-height: 50px;
@@ -160,7 +160,7 @@ h2 {
   background-size: 300px;
 }
 
-/* line 122, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 #skillsBlock {
   width: 98%;
   position: fixed;
@@ -169,7 +169,7 @@ h2 {
   height: 100%;
   background-color: #fff;
 }
-/* line 132, ../sass/screen.scss */
+/* line 141, ../sass/screen.scss */
 #skillsBlock #twitterBlock {
   position: absolute;
   top: 7%;
@@ -178,33 +178,33 @@ h2 {
   padding: 1% 0px;
   color: #52a0b7;
 }
-/* line 142, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 #skillsBlock #twitterBlock span {
   color: #6648a9;
 }
-/* line 147, ../sass/screen.scss */
+/* line 156, ../sass/screen.scss */
 #skillsBlock #skillsContainer {
   width: 80%;
   margin: 0 auto;
   padding: 0 1%;
 }
-/* line 153, ../sass/screen.scss */
+/* line 162, ../sass/screen.scss */
 #skillsBlock #skillsContainer h1 {
   font-size: 4em;
 }
-/* line 154, ../sass/screen.scss */
+/* line 163, ../sass/screen.scss */
 #skillsBlock #skillsContainer ul {
   margin: 10px 0;
 }
-/* line 157, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 #skillsBlock #skillsContainer ul li {
   line-height: 1.4em;
 }
-/* line 161, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 #skillsBlock #skillsContainer p {
   line-height: 2.5em;
 }
-/* line 162, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 #skillsBlock #skillsContainer span {
   font-family: "tTextFont", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
@@ -212,7 +212,7 @@ h2 {
   color: #6648a9;
 }
 
-/* line 171, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 #contentHolder {
   position: absolute;
   padding: 0;
@@ -222,7 +222,7 @@ h2 {
   background-color: green;
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 #contentBlock {
   height: 100%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 7px 2px;
@@ -249,7 +249,7 @@ h2 {
   		}
   	}*/
 }
-/* line 186, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 #contentBlock h1 {
   -webkit-text-stroke: 2px #52a0b7;
   color: white;
@@ -258,23 +258,23 @@ h2 {
   margin: 0 auto;
   margin-top: -50px;
 }
-/* line 208, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 #contentBlock #portfolio_section {
   margin: 0 auto;
   padding: 1% 0;
   width: 80%;
   height: 75%;
 }
-/* line 215, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 #contentBlock #portfolio_section h3 {
   margin: 10px;
   font-weight: 300;
 }
-/* line 219, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 #contentBlock #portfolio_section h4 {
-  margin: 5px 0;
+  margin: 10px 0;
 }
-/* line 223, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 #contentBlock #portfolio_section .item_image {
   float: left;
   width: 200px;
@@ -285,8 +285,24 @@ h2 {
   margin-left: 0;
   background-color: white;
 }
-/* line 233, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
+#contentBlock #portfolio_section .arrow-right-7 {
+  padding: 0;
+  float: left;
+  margin: 0px 5px 0 0;
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
+  border-left: 7px solid #6648a9;
+}
+/* line 249, ../sass/screen.scss */
 #contentBlock #portfolio_section a {
   margin: 5px 0;
+  text-decoration: none;
+  color: white;
+}
+/* line 254, ../sass/screen.scss */
+#contentBlock #portfolio_section a:hover {
   color: #6648a9;
 }
