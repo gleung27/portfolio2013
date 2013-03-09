@@ -9,8 +9,9 @@
 	  		var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/);
 	  		if (isMobile)
 	  		{
-	  			//initial set up
-		  			$('#contentBlock h1').css('margin-top', '0');
+	  			//initial set up //mobile
+	  			$('.header').height('5%');
+		  		$('#contentBlock h1').css('margin-top', '0');
 	  		}
 	  		var width = $(window).width() * 0.8;
 	  		$('#portfolio_summary .item_image').each(function(){
