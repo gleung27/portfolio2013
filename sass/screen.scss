@@ -136,7 +136,7 @@ h2 {
 	{
 		@include width100;
 		position:fixed;
-		top:11%;
+		top:10%;
 		margin:0% 10% 0 10%;
 		width:80%;
 		height:1em;
@@ -200,7 +200,7 @@ h2 {
 #contentHolder {
 	position:absolute; 
 	padding: 0;
-	height:80%; 
+	height:84%; 
 	top:65%; 
 	width:100%;
 }
@@ -343,9 +343,9 @@ h2 {
 	}
 }
 
-/*Media Queries max 600px */
+/*Media Queries max 400px */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 480px) {
 	 h1, #contentBlock h1 {
 		font-size: 1em;
 		-webkit-text-stroke: 0px;
