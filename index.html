@@ -6,10 +6,16 @@
 	  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	  <script>
 	  	$(document).ready(function(){
+
+	  		$(window).resize(function() {
+  				console.log($(window).width());
+			});
+
 	  		var isMobile = navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry)/);
 	  		if (isMobile)
 	  		{
 	  			//initial set up //mobile
+	  			console.log('dddd');
 	  			$('.header').height('5%');
 		  		$('#contentBlock h1').css('margin-top', '0');
 	  		}
@@ -42,17 +48,18 @@
 
 	</head>
 	<body >
-		<div id='skillsBlock'>
 			<div id='twitterBlock'><span>@gleung27:</span> Sample Twitter Feed</div>
+		<div id='skillsBlock'>
+
 			<div id='skillsContainer'>			
-				<div class='cols' style='width:40%;'>
+				<div class='cols' style='width:100%;'>
 					<p><span>Welcome</span> to the online portfolio of</p>
 					<h1> Gifford Leung</h1> 
 					<p>I create<span> mobile</span> apps, working with...</p>
 				</div>
-				<div class='clear' style='padding-bottom:20px;'></div>
-				<div class='cols' style='width:50%;height:10%;'></div>
-				<div class='cols' style='width:25%; text-align:left;'>
+				<div class='clear'></div>
+				<div class='cols section-left' style='height:10%;'></div>
+				<div class='cols section-right' >
 						<h2> iOS Development</h2>
 							<ul style= "list-style-type:none">
 								<li>Objective-C</li>
@@ -97,34 +104,42 @@
 	 -->			<div id='portfolio_section'>
 					<div class='cols' style='width:50%;'>
 						<div class='item_image'></div>
-						<h3>iOS Project</h3>
-						<h4> Teambuy App</h4>
-						<div class='arrow-right-7'></div>
-						<a href="#">Go To App</a>			
-						<div class='clear'></div>
+						<div class='item_info'>
+							<h3>iOS Project</h3>
+							<h4> Teambuy App</h4>
+							<div class='arrow-right-7'></div>
+							<a href="#">Go To App</a>			
+							<div class='clear'></div>
+						</div>
 
 						<div class='item_image'></div>			
-						<h3> iOS Project</h3>
-						<h4> Pizza Pizza App<h4>			
-						<div class='arrow-right-7'></div>
-						<a href="#">Go To App</a>			
-						<div class='clear'></div>
+						<div class='item_info'>
+							<h3> iOS Project</h3>
+							<h4> Pizza Pizza App</h4>			
+							<div class='arrow-right-7'></div>
+							<a href="#">Go To App</a>			
+							<div class='clear'></div>
+						</div>
 
 					</div>	
 					<div class='cols' style='width:50%;'>
 						<div class='item_image'></div>
-						<h3> Web Project</h3>
-						<h4> Royal LePage Mobile Web App<h4>			
-						<div class='arrow-right-7'></div>
-						<a href="#">Go To App</a>			
-						<div class='clear'></div>
+						<div class='item_info'>
+							<h3> Web Project</h3>
+							<h4> Royal LePage Mobile Web App</h4>			
+							<div class='arrow-right-7'></div>
+							<a href="#">Go To App</a>			
+							<div class='clear'></div>
+						</div>
 
 						<div class='item_image'></div>			
-						<h3>Playbook Project</h3>
-						<h4>Canada's Got Talent (WebWorks)</h4>			
-						<div class='arrow-right-7'></div>
-						<a href="#">Go To App</a>			
-						<div class='clear'></div>
+						<div class='item_info'>
+							<h3>Playbook Project</h3>
+							<h4>Canada's Got Talent (WebWorks)</h4>			
+							<div class='arrow-right-7'></div>
+							<a href="#">Go To App</a>			
+							<div class='clear'></div>
+						</div>
 							
 					</div>	
 				</div>

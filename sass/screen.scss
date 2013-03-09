@@ -95,6 +95,7 @@ h2 {
 	float:left;
 	margin:0;
 	padding:0;
+	padding-bottom: 20px;
 }
 
 
@@ -105,7 +106,7 @@ h2 {
 	//@include background-image(linear-gradient(left top, #353535, #2d2d2d));
 	background:url('../images/black_mamba_gradient.png') repeat top left;
 	font-size: 2em;
-	height:5%;
+	height:10%;
 	position:fixed; 
 	top:0px; 
 	color:white;
@@ -126,25 +127,14 @@ h2 {
 		}
 	}
 }
-
-#skillsBlock
-{
-	
-	@include width100;
-	position:fixed;
-	top:0px;
-	padding-top:12%;
-	height:100%;
-	background-color:#fff;
-
-	#twitterBlock
+#twitterBlock
 	{
-
-		position:absolute;
-		top:7%;
-		margin:0 10%;
+		@include width100;
+		position:fixed;
+		top:10%;
+		margin:0% 10% 0 10%;
 		width:80%;
-		padding:1% 0px;
+		padding:0 1%;
 		color:$primaryBlue;
 
 		span
@@ -152,12 +142,34 @@ h2 {
 			color:$tertaryPurple;
 		}
 	}
+
+#skillsBlock
+{
+	
+	@include width100;
+	position:fixed;
+	top:15%;
+	//padding-top:12%;
+	height:100%;
+	background-color:#fff;
+
+
 	#skillsContainer 
 	{
+		position: relative;
 		width:80%;
 		margin:0 auto;
 		padding:0 1%;
 
+		.section-left
+		{
+			width:50%;
+		}
+
+		.section-right
+		{
+			width:25%;
+		}
 
 		h1{ font-size: 4em;}
 		ul {
@@ -180,7 +192,7 @@ h2 {
 #contentHolder {
 	position:absolute; 
 	padding: 0;
-	height:85%; 
+	height:83%; 
 	top:80%; 
 	width:100%;
 	background-color: green;
@@ -219,7 +231,7 @@ h2 {
 		margin: 0 auto;
 		padding:1% 0;
 		width: 80%;
-		height:75%;
+		height:90%;
 		//opacity:0.0;
 		h3 {
 			margin:10px;
@@ -256,5 +268,69 @@ h2 {
 			}
 		}
 	
+	}
+}
+
+/*Media Queries max 1000px */
+
+@media only screen and (max-width: 1000px) {
+	
+	
+
+	#skillsBlock #skillsContainer 
+	{
+		.clear{clear:none;}
+
+		.section-left
+		{
+			width:0%;
+		}
+
+		.section-right
+		{
+			width:50%;
+		}
+		h1 {
+			font-size: 2em;
+		}
+		p{
+			line-height: 1.5em;
+		}
+		span 
+		{
+			font-size:1em;
+		}
+	}
+	h2 	
+	{
+		font-size: 1em;
+	}
+
+	ul 
+	{
+		font-size: 0.8em;
+	}
+
+	#contentBlock #portfolio_section .item_image
+		{
+			width: 150px;
+			height:150px;
+			background-size:25px 25px;
+		}
+	.item_info 
+	{
+		//display: none;
+	}
+}
+
+/*Media Queries max 600px */
+
+@media only screen and (max-width: 600px) {
+		.item_info 
+	{
+		h3{ display: none;}
+		float: left;
+		min-height: 80px;
+		max-height:90px;
 	}
 }
