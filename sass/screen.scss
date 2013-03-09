@@ -54,7 +54,6 @@ $tertaryPurple: #6648a9;
 	@include box-shadow(rgba(black, 0.2) 0 0 7px 2px);
 }
 
-
 body
 {
 	font-family: 'tTextFont','Helvetica', 'Arial', sans-serif;
@@ -62,6 +61,7 @@ body
 	div 
 	{
 		padding: 1%;
+
 	}
 }
 
@@ -96,7 +96,7 @@ h2 {
 	//@include background-image(linear-gradient(left top, #353535, #2d2d2d));
 	background:url('../images/black_mamba_gradient.png') repeat top left;
 	font-size: 2em;
-	height:100px;
+	height:10%;
 	position:fixed; 
 	top:0px; 
 	color:white;
@@ -124,7 +124,7 @@ h2 {
 	@include width100;
 	position:fixed;
 	top:0px;
-	padding-top:140px;
+	padding-top:12%;
 	height:100%;
 	background-color:#fff;
 
@@ -132,7 +132,7 @@ h2 {
 	{
 
 		position:absolute;
-		top:80px;
+		top:7%;
 		margin:0 10%;
 		width:80%;
 		padding:1% 0px;
@@ -171,7 +171,7 @@ h2 {
 #contentHolder {
 	position:absolute; 
 	padding: 0;
-	height:80%; 
+	height:85%; 
 	top:80%; 
 	width:100%;
 	background-color: green;
