@@ -192,12 +192,19 @@ a{
 
 }
 
+#twitterBlock 
+{
+	text-overflow: ellipsis;
+	width: 60%;
+	overflow: hidden;
+}
 #skillsBlock
 {
 	
 	@include width100;
 	position:fixed;
-	top:15%;
+	top:19%;
+	padding-top:0;
 	height:100%;
 	background-color:#fff;
 

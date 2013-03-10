@@ -226,45 +226,53 @@ a:hover {
 }
 
 /* line 196, ../sass/screen.scss */
+#twitterBlock {
+  text-overflow: ellipsis;
+  width: 60%;
+  overflow: hidden;
+}
+
+/* line 202, ../sass/screen.scss */
 #skillsBlock {
   width: 98%;
   position: fixed;
-  top: 15%;
+  top: 19%;
+  padding-top: 0;
   height: 100%;
   background-color: #fff;
 }
-/* line 206, ../sass/screen.scss */
+/* line 213, ../sass/screen.scss */
 #skillsBlock #skillsContainer {
   position: relative;
   width: 80%;
   margin: 0 auto;
   padding: 0 1%;
 }
-/* line 213, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 #skillsBlock #skillsContainer .section-left {
   width: 50%;
 }
-/* line 218, ../sass/screen.scss */
+/* line 225, ../sass/screen.scss */
 #skillsBlock #skillsContainer .section-right {
   width: 25%;
 }
-/* line 222, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 #skillsBlock #skillsContainer h1 {
   font-size: 4em;
 }
-/* line 223, ../sass/screen.scss */
+/* line 230, ../sass/screen.scss */
 #skillsBlock #skillsContainer ul {
   margin: 10px 0;
 }
-/* line 226, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 #skillsBlock #skillsContainer ul li {
   line-height: 1.4em;
 }
-/* line 230, ../sass/screen.scss */
+/* line 237, ../sass/screen.scss */
 #skillsBlock #skillsContainer p {
   line-height: 2.5em;
 }
-/* line 231, ../sass/screen.scss */
+/* line 238, ../sass/screen.scss */
 #skillsBlock #skillsContainer span {
   font-family: "tTextFont", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
@@ -272,7 +280,7 @@ a:hover {
   color: #6648a9;
 }
 
-/* line 240, ../sass/screen.scss */
+/* line 247, ../sass/screen.scss */
 #contentHolder {
   position: absolute;
   padding: 0;
@@ -281,7 +289,7 @@ a:hover {
   width: 100%;
 }
 
-/* line 248, ../sass/screen.scss */
+/* line 255, ../sass/screen.scss */
 #contentBlock {
   height: 100%;
   -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 0 7px 2px;
@@ -308,7 +316,7 @@ a:hover {
   		}
   	}*/
 }
-/* line 254, ../sass/screen.scss */
+/* line 261, ../sass/screen.scss */
 #contentBlock h1 {
   -webkit-text-stroke: 2px #52a0b7;
   color: white;
@@ -317,24 +325,24 @@ a:hover {
   margin: 0 auto;
   margin-top: -60px;
 }
-/* line 276, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 #contentBlock #portfolio_section {
   margin: 0 auto;
   padding: 1% 0;
   width: 80%;
   height: 84%;
 }
-/* line 283, ../sass/screen.scss */
+/* line 290, ../sass/screen.scss */
 #contentBlock #portfolio_section h3 {
   margin: 10px;
   font-weight: 300;
 }
-/* line 287, ../sass/screen.scss */
+/* line 294, ../sass/screen.scss */
 #contentBlock #portfolio_section h4 {
   margin: 10px 0;
   min-height: 2em;
 }
-/* line 292, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 #contentBlock #portfolio_section .item_image {
   float: left;
   width: 200px;
@@ -346,11 +354,11 @@ a:hover {
   border: 5px solid white;
   margin-left: 0;
 }
-/* line 305, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 #contentBlock #portfolio_section .item_info {
   height: 49%;
 }
-/* line 308, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 #contentBlock #portfolio_section .arrow-right-7 {
   padding: 0;
   float: left;
@@ -364,42 +372,42 @@ a:hover {
 
 /*Media Queries max 1000px */
 @media only screen and (max-width: 1000px) {
-  /* line 327, ../sass/screen.scss */
+  /* line 334, ../sass/screen.scss */
   #skillsBlock #skillsContainer .clear {
     clear: none;
   }
-  /* line 330, ../sass/screen.scss */
+  /* line 337, ../sass/screen.scss */
   #skillsBlock #skillsContainer .section-left {
     width: 0%;
   }
-  /* line 335, ../sass/screen.scss */
+  /* line 342, ../sass/screen.scss */
   #skillsBlock #skillsContainer .section-right {
     width: 50%;
   }
-  /* line 338, ../sass/screen.scss */
+  /* line 345, ../sass/screen.scss */
   #skillsBlock #skillsContainer h1 {
     font-size: 2em;
   }
-  /* line 341, ../sass/screen.scss */
+  /* line 348, ../sass/screen.scss */
   #skillsBlock #skillsContainer p {
     line-height: 1.5em;
   }
-  /* line 345, ../sass/screen.scss */
+  /* line 352, ../sass/screen.scss */
   #skillsBlock #skillsContainer span {
     font-size: 1em;
   }
 
-  /* line 350, ../sass/screen.scss */
+  /* line 357, ../sass/screen.scss */
   h2 {
     font-size: 1em;
   }
 
-  /* line 355, ../sass/screen.scss */
+  /* line 362, ../sass/screen.scss */
   ul {
     font-size: 0.8em;
   }
 
-  /* line 360, ../sass/screen.scss */
+  /* line 367, ../sass/screen.scss */
   #contentBlock #portfolio_section .item_image {
     width: 150px;
     height: 150px;
@@ -408,31 +416,31 @@ a:hover {
 }
 /*Media Queries max 600px */
 @media only screen and (max-width: 600px) {
-  /* line 372, ../sass/screen.scss */
+  /* line 379, ../sass/screen.scss */
   .item_info {
     float: left;
     min-height: 80px;
     max-height: 90px;
   }
-  /* line 373, ../sass/screen.scss */
+  /* line 380, ../sass/screen.scss */
   .item_info h3 {
     display: none;
   }
 }
 /*Media Queries max 400px */
 @media only screen and (max-width: 480px) {
-  /* line 383, ../sass/screen.scss */
+  /* line 390, ../sass/screen.scss */
   h1, #contentBlock h1 {
     font-size: 1em;
     -webkit-text-stroke: 0px;
   }
 
-  /* line 388, ../sass/screen.scss */
+  /* line 395, ../sass/screen.scss */
   #mobileSocialBlock {
     display: block;
   }
 
-  /* line 392, ../sass/screen.scss */
+  /* line 399, ../sass/screen.scss */
   #socialBlock {
     display: none;
   }
