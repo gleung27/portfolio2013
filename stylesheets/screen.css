@@ -155,7 +155,7 @@ a:hover {
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 7px 2px;
   background: url("../images/black_mamba_gradient.png") repeat top left;
   font-size: 2em;
-  height: 10%;
+  height: 12%;
   min-height: 40px;
   position: fixed;
   top: 0px;
@@ -211,7 +211,7 @@ a:hover {
   padding: 0px;
   margin-right: 10px;
   background-position: top center;
-  background-size: 75%;
+  background-size: 95%;
   background-repeat: no-repeat;
 }
 /* line 184, ../sass/screen.scss */
@@ -276,7 +276,7 @@ a:hover {
 #contentHolder {
   position: absolute;
   padding: 0;
-  height: 84%;
+  height: 80%;
   top: 65%;
   width: 100%;
 }
