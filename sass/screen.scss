@@ -85,6 +85,16 @@ h2 {
 	color:$secondaryBlack;
 }
 
+a{
+	margin: 5px 0;
+	text-decoration: none;
+	color: white;
+
+	&:hover {
+		color:$tertaryPurple;
+	}
+}
+
 .clear {
 	clear:both;
 	padding: 0px;
@@ -132,24 +142,55 @@ h2 {
 		}
 	}
 }
-#twitterBlock
+
+
+
+#socialBlock, 
+#mobileSocialBlock
 	{
 		@include width100;
 		position:fixed;
 		top:10%;
-		margin:0% 10% 0 10%;
+		margin:0% 10%;
 		width:80%;
 		height:1em;
-		overflow:hidden;
-		text-overflow: ellipsis;
 		padding:0 1%;
 		color:$primaryBlue;
 
+
+		#linkedin
+		{
+			background-image:url('../images/linkedin.png');
+		}
+
+		#email
+		{
+			background-image:url('../images/mail.png')  ;
+		}
+
+		a {
+			float:left;
+			width:42px;
+			height:42px;
+			margin:0 auto;
+			padding:0px;
+			margin-right: 10px;
+			background-position: top center;
+			background-size:75%;
+			background-repeat: no-repeat;
+
+		}
 		span
 		{
 			color:$tertaryPurple;
 		}
 	}
+
+#mobileSocialBlock
+{
+	display: none;
+
+}
 
 #skillsBlock
 {
@@ -157,7 +198,6 @@ h2 {
 	@include width100;
 	position:fixed;
 	top:15%;
-	//padding-top:12%;
 	height:100%;
 	background-color:#fff;
 
@@ -246,6 +286,7 @@ h2 {
 		}
 		h4 {
 			margin: 10px 0;
+			min-height: 2em;
 		}
 		.item_image
 		{
@@ -253,10 +294,11 @@ h2 {
 			width: 200px;
 			height:200px;
 			margin: 10px;
-			background-size:50px 50px;
-			padding-left:0;
+			background-image: url('http://pizzaromahalal.com/wp-content/uploads/2010/05/pizza.jpg');
+			background-size: 100% 100%;
+			background-color: white;
+			border: 5px solid white;
 			margin-left: 0;
-			background-color:white;
 		}
 
 		.item_info
@@ -269,15 +311,7 @@ h2 {
 			margin: 0px 5px 0 0;
 			@include arrow-right(7px);
 		}
-		a{
-			margin: 5px 0;
-			text-decoration: none;
-			color: white;
 
-			&:hover {
-				color:$tertaryPurple;
-			}
-		}
 	
 	}
 }
@@ -326,7 +360,7 @@ h2 {
 		{
 			width: 150px;
 			height:150px;
-			background-size:25px 25px;
+			background-size:100% 100%;
 		}
 
 }
@@ -349,5 +383,13 @@ h2 {
 	 h1, #contentBlock h1 {
 		font-size: 1em;
 		-webkit-text-stroke: 0px;
+	}
+	#mobileSocialBlock
+	{
+		display: block;
+	}
+	#socialBlock
+	{
+		display: none;
 	}
 }
