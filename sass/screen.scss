@@ -410,3 +410,27 @@ a{
 		display: none;
 	}
 }
+
+	@media  screen and (orientation: landscape) and (max-height:480px){
+		#contentBlock h1 {
+			position: fixed;
+			font-size: 1em;
+			-webkit-text-stroke: 0px;
+			margin: 0 10%;
+		}
+
+		#socialBlock
+		{
+			display: none;
+		}
+		#contentHolder{
+			position: fixed;
+			top:90%;
+		}
+		#portfolio_section
+		{
+			display: none;
+		}
+}
+
+

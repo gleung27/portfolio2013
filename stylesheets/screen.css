@@ -452,3 +452,28 @@ a:hover {
     display: none;
   }
 }
+@media screen and (orientation: landscape) and (max-height: 480px) {
+  /* line 415, ../sass/screen.scss */
+  #contentBlock h1 {
+    position: fixed;
+    font-size: 1em;
+    -webkit-text-stroke: 0px;
+    margin: 0 10%;
+  }
+
+  /* line 423, ../sass/screen.scss */
+  #socialBlock {
+    display: none;
+  }
+
+  /* line 426, ../sass/screen.scss */
+  #contentHolder {
+    position: fixed;
+    top: 90%;
+  }
+
+  /* line 431, ../sass/screen.scss */
+  #portfolio_section {
+    display: none;
+  }
+}
