@@ -300,12 +300,14 @@ a{
 			float:left;
 			width: 200px;
 			height:200px;
-			margin: 10px;
+			margin:0px;
+
 			background-image: url('http://pizzaromahalal.com/wp-content/uploads/2010/05/pizza.jpg');
 			background-size: 100% 100%;
 			background-color: white;
 			border: 5px solid white;
-			margin-left: 0;
+			margin-right: 10px;
+
 		}
 
 		.item_info
@@ -387,10 +389,18 @@ a{
 /*Media Queries max 400px */
 
 @media only screen and (max-width: 480px) {
+
 	 h1, #contentBlock h1 {
 		font-size: 1em;
 		-webkit-text-stroke: 0px;
 	}
+
+		#contentBlock #portfolio_section .item_image
+		{
+			width: 75px;
+			height:75px;
+			background-size:100% 100%;
+		}
 	#mobileSocialBlock
 	{
 		display: block;

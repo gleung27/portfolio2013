@@ -347,18 +347,18 @@ a:hover {
   float: left;
   width: 200px;
   height: 200px;
-  margin: 10px;
+  margin: 0px;
   background-image: url("http://pizzaromahalal.com/wp-content/uploads/2010/05/pizza.jpg");
   background-size: 100% 100%;
   background-color: white;
   border: 5px solid white;
-  margin-left: 0;
+  margin-right: 10px;
 }
-/* line 312, ../sass/screen.scss */
+/* line 314, ../sass/screen.scss */
 #contentBlock #portfolio_section .item_info {
   height: 49%;
 }
-/* line 315, ../sass/screen.scss */
+/* line 317, ../sass/screen.scss */
 #contentBlock #portfolio_section .arrow-right-7 {
   padding: 0;
   float: left;
@@ -372,42 +372,42 @@ a:hover {
 
 /*Media Queries max 1000px */
 @media only screen and (max-width: 1000px) {
-  /* line 334, ../sass/screen.scss */
+  /* line 336, ../sass/screen.scss */
   #skillsBlock #skillsContainer .clear {
     clear: none;
   }
-  /* line 337, ../sass/screen.scss */
+  /* line 339, ../sass/screen.scss */
   #skillsBlock #skillsContainer .section-left {
     width: 0%;
   }
-  /* line 342, ../sass/screen.scss */
+  /* line 344, ../sass/screen.scss */
   #skillsBlock #skillsContainer .section-right {
     width: 50%;
   }
-  /* line 345, ../sass/screen.scss */
+  /* line 347, ../sass/screen.scss */
   #skillsBlock #skillsContainer h1 {
     font-size: 2em;
   }
-  /* line 348, ../sass/screen.scss */
+  /* line 350, ../sass/screen.scss */
   #skillsBlock #skillsContainer p {
     line-height: 1.5em;
   }
-  /* line 352, ../sass/screen.scss */
+  /* line 354, ../sass/screen.scss */
   #skillsBlock #skillsContainer span {
     font-size: 1em;
   }
 
-  /* line 357, ../sass/screen.scss */
+  /* line 359, ../sass/screen.scss */
   h2 {
     font-size: 1em;
   }
 
-  /* line 362, ../sass/screen.scss */
+  /* line 364, ../sass/screen.scss */
   ul {
     font-size: 0.8em;
   }
 
-  /* line 367, ../sass/screen.scss */
+  /* line 369, ../sass/screen.scss */
   #contentBlock #portfolio_section .item_image {
     width: 150px;
     height: 150px;
@@ -416,31 +416,38 @@ a:hover {
 }
 /*Media Queries max 600px */
 @media only screen and (max-width: 600px) {
-  /* line 379, ../sass/screen.scss */
+  /* line 381, ../sass/screen.scss */
   .item_info {
     float: left;
     min-height: 80px;
     max-height: 90px;
   }
-  /* line 380, ../sass/screen.scss */
+  /* line 382, ../sass/screen.scss */
   .item_info h3 {
     display: none;
   }
 }
 /*Media Queries max 400px */
 @media only screen and (max-width: 480px) {
-  /* line 390, ../sass/screen.scss */
+  /* line 393, ../sass/screen.scss */
   h1, #contentBlock h1 {
     font-size: 1em;
     -webkit-text-stroke: 0px;
   }
 
-  /* line 395, ../sass/screen.scss */
+  /* line 399, ../sass/screen.scss */
+  #contentBlock #portfolio_section .item_image {
+    width: 75px;
+    height: 75px;
+    background-size: 100% 100%;
+  }
+
+  /* line 405, ../sass/screen.scss */
   #mobileSocialBlock {
     display: block;
   }
 
-  /* line 399, ../sass/screen.scss */
+  /* line 409, ../sass/screen.scss */
   #socialBlock {
     display: none;
   }
