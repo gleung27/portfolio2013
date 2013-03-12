@@ -163,9 +163,14 @@ a{
 			background-image:url('../images/linkedin.png');
 		}
 
-		#email
+		#gplus
 		{
-			background-image:url('../images/mail.png')  ;
+			background-image:url('../images/googleplus.png');
+		}
+		#email
+
+		{
+			background-image:url('../images/mail.png');
 		}
 
 		a {
@@ -380,17 +385,35 @@ a{
 
 @media only screen and (max-width: 480px) {
 
-	 h1, #contentBlock h1 {
+	h1, #contentBlock h1 {
 		font-size: 1em;
 		-webkit-text-stroke: 0px;
 	}
 
-		#contentBlock #portfolio_section .item_image
+	.header .header_container .image
+	{
+		margin: 0;
+		background-size: 200px;
+	}
+
+	#contentHolder 
+	{
+		top:95%;
+	}
+	#contentBlock
+	{	
+		overflow: hidden;
+		padding-bottom: 20px;
+		h1 {margin-top: 0px; }
+
+		 #portfolio_section .item_image
 		{
 			width: 75px;
 			height:75px;
 			background-size:100% 100%;
 		}
+	}
+
 	#mobileSocialBlock
 	{
 		display: block;
@@ -402,6 +425,8 @@ a{
 }
 
 	@media  screen and (orientation: landscape) and (max-height:480px){
+
+
 
 		#socialBlock, #contentBlock h1
 		{
