@@ -9,7 +9,8 @@
 			var latestTweet='';	  		
 			var apiKey ='AIzaSyCJ2swX-qE4pm5LPSadxeX45yu-h3tgLbw'
 	  		jQuery(function($) { // Shorter for $(document).ready(function() {, and you make sure that $ refers to jQuery.
-   			 $.ajax({ // All jQuery ajax calls go throw here. $.getJSON is just a rewrite function for $.ajax
+   			 $.ajax({ 
+   			 // All jQuery ajax calls go throw here. $.getJSON is just a rewrite function for $.ajax
        			 url: "https://www.googleapis.com/plus/v1/people/110939176641600769183/activities/public?key="+apiKey,
        	 		dataType: "jsonp", // dataType set to jsonp (important)
         		success: function( response ) {
