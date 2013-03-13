@@ -344,17 +344,34 @@ a:hover {
   width: 200px;
   height: 200px;
   margin: 0px;
-  background-image: url("http://pizzaromahalal.com/wp-content/uploads/2010/05/pizza.jpg");
-  background-size: 100% 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-color: white;
   border: 5px solid white;
   margin-right: 10px;
 }
 /* line 309, ../sass/screen.scss */
+#contentBlock #portfolio_section #item_teambuy {
+  background-image: url("../images/portfolio/teambuy.png");
+}
+/* line 314, ../sass/screen.scss */
+#contentBlock #portfolio_section #item_pizzapizza {
+  background-image: url("../images/portfolio/pp.png");
+}
+/* line 319, ../sass/screen.scss */
+#contentBlock #portfolio_section #item_rlp {
+  background-image: url("../images/portfolio/rlp.png");
+}
+/* line 324, ../sass/screen.scss */
+#contentBlock #portfolio_section #item_cgt {
+  background-image: url("../images/portfolio/cgt.png");
+}
+/* line 328, ../sass/screen.scss */
 #contentBlock #portfolio_section .item_info {
   height: 49%;
 }
-/* line 312, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 #contentBlock #portfolio_section .arrow-right-7 {
   padding: 0;
   float: left;
@@ -368,119 +385,120 @@ a:hover {
 
 /*Media Queries max 1000px */
 @media only screen and (max-width: 1000px) {
-  /* line 331, ../sass/screen.scss */
+  /* line 350, ../sass/screen.scss */
   #skillsBlock #skillsContainer .clear {
     clear: none;
   }
-  /* line 334, ../sass/screen.scss */
+  /* line 353, ../sass/screen.scss */
   #skillsBlock #skillsContainer .section-left {
     width: 0%;
   }
-  /* line 339, ../sass/screen.scss */
+  /* line 358, ../sass/screen.scss */
   #skillsBlock #skillsContainer .section-right {
     width: 50%;
   }
-  /* line 342, ../sass/screen.scss */
+  /* line 361, ../sass/screen.scss */
   #skillsBlock #skillsContainer h1 {
     font-size: 2em;
   }
-  /* line 345, ../sass/screen.scss */
+  /* line 364, ../sass/screen.scss */
   #skillsBlock #skillsContainer p {
     line-height: 1.5em;
   }
-  /* line 349, ../sass/screen.scss */
+  /* line 368, ../sass/screen.scss */
   #skillsBlock #skillsContainer span {
     font-size: 1em;
   }
 
-  /* line 354, ../sass/screen.scss */
+  /* line 373, ../sass/screen.scss */
   h2 {
     font-size: 1em;
   }
 
-  /* line 359, ../sass/screen.scss */
+  /* line 378, ../sass/screen.scss */
   ul {
     font-size: 0.8em;
   }
 
-  /* line 364, ../sass/screen.scss */
+  /* line 383, ../sass/screen.scss */
   #contentBlock #portfolio_section .item_image {
     width: 150px;
     height: 150px;
-    background-size: 100% 100%;
+    background-size: 125%;
   }
 }
 /*Media Queries max 600px */
 @media only screen and (max-width: 600px) {
-  /* line 376, ../sass/screen.scss */
+  /* line 395, ../sass/screen.scss */
   .item_info {
     float: left;
     min-height: 80px;
     max-height: 90px;
   }
-  /* line 377, ../sass/screen.scss */
+  /* line 396, ../sass/screen.scss */
   .item_info h3 {
     display: none;
   }
 }
 /*Media Queries max 400px */
 @media only screen and (max-width: 480px) {
-  /* line 388, ../sass/screen.scss */
+  /* line 407, ../sass/screen.scss */
   h1, #contentBlock h1 {
     font-size: 1em;
     -webkit-text-stroke: 0px;
   }
 
-  /* line 394, ../sass/screen.scss */
+  /* line 413, ../sass/screen.scss */
   .header .header_container .image {
     margin: 0;
     background-size: 200px;
+    background-position: 0px;
   }
 
-  /* line 400, ../sass/screen.scss */
+  /* line 420, ../sass/screen.scss */
   #contentHolder {
     top: 95%;
   }
 
-  /* line 404, ../sass/screen.scss */
+  /* line 424, ../sass/screen.scss */
   #contentBlock {
     overflow: hidden;
     padding-bottom: 20px;
   }
-  /* line 407, ../sass/screen.scss */
+  /* line 427, ../sass/screen.scss */
   #contentBlock h1 {
     margin-top: 0px;
   }
-  /* line 410, ../sass/screen.scss */
+  /* line 430, ../sass/screen.scss */
   #contentBlock #portfolio_section .item_image {
     width: 75px;
     height: 75px;
-    background-size: 100% 100%;
+    background-size: 150%;
   }
 
-  /* line 418, ../sass/screen.scss */
+  /* line 438, ../sass/screen.scss */
   #mobileSocialBlock {
     display: block;
   }
 
-  /* line 422, ../sass/screen.scss */
+  /* line 442, ../sass/screen.scss */
   #socialBlock {
     display: none;
   }
 }
 @media screen and (orientation: landscape) and (max-height: 480px) {
-  /* line 432, ../sass/screen.scss */
+  /* line 452, ../sass/screen.scss */
   #socialBlock, #contentBlock h1 {
     display: none;
   }
 
-  /* line 436, ../sass/screen.scss */
+  /* line 456, ../sass/screen.scss */
   #contentHolder {
     position: fixed;
     top: 90%;
   }
 
-  /* line 442, ../sass/screen.scss */
+  /* line 462, ../sass/screen.scss */
   #contentHolder #portfolio_summary {
     display: inline;
     width: 100%;
@@ -489,7 +507,7 @@ a:hover {
     padding: 1% 0;
   }
 
-  /* line 450, ../sass/screen.scss */
+  /* line 470, ../sass/screen.scss */
   #portfolio_section {
     display: none;
   }

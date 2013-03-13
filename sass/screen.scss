@@ -296,15 +296,34 @@ a{
 			width: 200px;
 			height:200px;
 			margin:0px;
-
-			background-image: url('http://pizzaromahalal.com/wp-content/uploads/2010/05/pizza.jpg');
-			background-size: 100% 100%;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
 			background-color: white;
 			border: 5px solid white;
 			margin-right: 10px;
 
 		}
 
+		#item_teambuy
+		{
+			background-image: url('../images/portfolio/teambuy.png');
+		}
+
+		#item_pizzapizza
+		{
+			background-image: url('../images/portfolio/pp.png');
+		}
+
+		#item_rlp
+		{
+			background-image: url('../images/portfolio/rlp.png');
+		}
+
+		#item_cgt
+		{
+			background-image: url('../images/portfolio/cgt.png');
+		}
 		.item_info
 		{
 			height:49%;
@@ -364,7 +383,7 @@ a{
 		{
 			width: 150px;
 			height:150px;
-			background-size:100% 100%;
+			background-size:125%;
 		}
 
 }
@@ -394,6 +413,7 @@ a{
 	{
 		margin: 0;
 		background-size: 200px;
+		background-position: 0px;
 	}
 
 	#contentHolder 
@@ -410,7 +430,7 @@ a{
 		{
 			width: 75px;
 			height:75px;
-			background-size:100% 100%;
+			background-size:150%;
 		}
 	}
 
